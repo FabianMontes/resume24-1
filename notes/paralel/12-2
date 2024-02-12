@@ -13,4 +13,69 @@ los datos estan geograficamente separados.
 
 hablemos de patron
 
-mydelweb
+los patrones nos dan la estrategia para realizar algo
+
+1 servidor web version base
+
+--------------------|
+base de datos       |       datos
+--------------------|
+datos               |
+--------------------|
+logica de negocio   |   que hace el servidor, su logica, su back -- el negocio
+--------------------|
+servidor web        |   pintar - vista
+--------------------|
+sistema operativo   |
+--------------------|
+
+una falla y todo muere
+
+inventence un patron un modelo
+
+cuando hay un problema grande dividamoslo en pedazos
+
+dividir y especializar 
+mideword
+
+modelo vista controlador
+
+
+concurrente y paralelo
+
+el modelo tiene que poder crecer
+
+docker y sus contenedores
+
+vamos a resaltar, patrones de diseño el uso de contenedores en docker, y la division del modelo vista controlador
+
+el patron es una estrategia
+
+fork, separacion de ramas
+
+los patrones estan en la zona del diseño, mas lado humano mas alto nivel
+
+
+CONCURRENCIA
+
+los humanos piensan de forma concurrente
+
+realizar varias tareas simultaneas (eliminar secuencias)
+
+primero concurrente, viene con la estructura de la solucion.
+
+se  pueden hacer cosas concurrente, pero la parte fisica es paralela
+
+manejar las cosas al mismo tiempo
+
+PARALELISMO
+
+fisica, dominio de la ejecucion
+no secuencial es asincronico
+
+realizar las al mismo tiempo
+
+lo paralelo usa lo concurrente
+
+
+
