@@ -1,0 +1,64 @@
+Sistema difuso contiene 4 modulos
+
+sistema  basado en implicaciones
+
+motoer de inferencia
+
+base de reglas
+
+M.S (modulo  de salida )
+
+entrada y salida son  *variables linguisticas*
+se recomienda usar solo minuscula sostenida
+cuadrupla [nombre,universo (intervalo que define la variable),termino del lenguaje(conjunto de terminos),significador]
+
+significador, funcion que relaciona el universo con el termino del lenguaje
+Ejemplo
+
+Entradas
+Temperatura / cuadrupla [t,τ,T_t,S_t]
+T =[BAJA,MEDIA,ALTA]
+τ = [20,100]
+S = [baja:<40:1,40<80:-(x-40)/40,>80:0;
+    medio:<40:0,40<60:(x-40)/20,60<80:-(x-60)/20,>80:0;
+    alta: <40:0,40<80:(x-40)/40,>80:1;
+]
+olla con agua conectada al computador,
+
+cantidad de gas se debe suministrar a la olla para mantener la temperatura en medio, 
+
+Salida
+Gas [g,ⴒ,G_g,Z_g]
+ⴒ = [0,100]
+G =[BAJA,MEDIA,ALTA]
+Z = [baja:<40:1,40<80:-(x-40)/40,>80:0;
+    medio:<40:0,40<60:(x-40)/20,60<80:-(x-60)/20,>80:0;
+    alta: <40:0,40<80:(x-40)/40,>80:1;
+]
+
+Base de reglas ->
+
+R_1: t == T_2 -> g == G_0
+R_2: t == T_1 -> g == G_1
+R_3: t == T_0 -> g == G_2
+
+
+superficie, cruce entre entrada salida, y el Significanete de ambas
+
+union interseccion, union con el maximo interseccion con el minimo
+
+esto es dependendiente del motor de inferencia, 
+minimo evalua la proposicion condicional segun lo que es menor, 
+~p^q
+
+
+NAFIPS
+North 
+american
+fuzzy (difuso)
+information
+processing
+society
+
+ingenieria de conocimiento
+
